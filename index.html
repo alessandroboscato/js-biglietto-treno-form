@@ -11,24 +11,61 @@
     <div class="container">
       <h1>calcola il prezzo del tuo biglietto</h1>
       <!-- box input -->
-      <div class="box">
-        <div class="col">
-          <label for="">Nome Cognome</label>
-            <input type="text" placeholder="Nome cognome">
+      <div class="box-input">
+        <div class="row">
+          <div class="col">
+            <label for="">Nome Cognome</label>
+              <input type="text" placeholder="Nome cognome">
+          </div>
+          <div class="col">
+            <label for="">Km da percorrere</label>
+              <input type="number" placeholder="kilometri">
+          </div>
+          <div class="col">
+            <label for="">Fascia d'et&agrave;</label>
+              <select>
+                <option value="">Maggiorenne</option>
+                <option value="">Minorenne</option>
+                <option value="">Over 65</option>
+              </select>
+          </div>
         </div>
-        <div class="col">
-          <label for="">Km da percorrere</label>
-            <input type="number" placeholder="kilometri">
+        <div class="row">
+          <div class="action">
+            <button>Genera</button>
+            <button>Annulla</button>
+          </div>
         </div>
-        <div class="col">
-          <label for="">Fascia d'et&agrave;</label>
-            <select>
-              <option value="">Maggiorenne</option>
-              <option value="">Minorenne</option>
-              <option value="">Over 65</option>
-            </select>
+      </div>
+      <h2>il tuo biglietto</h2>
+      <div class="box-output">
+        <h3>dettaglio passeggeri</h3>
+        <div class="output-table">
+          <div class="passenger">
+            <h3>Nome passeggero</h3>
+            <h4>Pippo</h4>
+          </div>
+          <div class="details">
+            <table>
+              <thead>
+                <tr>
+                  <th>Offerta</th>
+                  <th>Carrozza</th>
+                  <th>Codice CP</th>
+                  <th>Costo biglietto</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
         </div>
-        
       </div>
     </div>
 

@@ -8,26 +8,50 @@
   background-color: #BA1550;
   width: 1200px;
   margin: auto;
-
 }
 
-h1 {
+h1, h2 {
   text-transform: uppercase;
   color: #fff;
   text-align: center;
+  font-size: 30px;
 }
 
-.box {
+.box-input {
   background-color: #fff;
   border-radius: 10px;
   width: 900px;
   margin: auto;
   padding: 20px;
+}
+.row {
+  width: 100%;
   display: flex;
   justify-content: space-around;
 }
-
 .col {
   display: flex;
   flex-direction: column;
+}
+
+.box-output {
+  background-color: #fff;
+  width: 900px;
+  margin: auto;
+  padding: 20px;
+
+}
+
+.output-table {
+  width: 100%;
+  display: flex;
+}
+
+.passenger {
+  width: 200px;
+  background-color: grey;
+}
+
+.details {
+  width: calc(100% - 200px);
 }
