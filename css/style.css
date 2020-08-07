@@ -1,0 +1,33 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  background-color: #BA1550;
+  width: 1200px;
+  margin: auto;
+
+}
+
+h1 {
+  text-transform: uppercase;
+  color: #fff;
+  text-align: center;
+}
+
+.box {
+  background-color: #fff;
+  border-radius: 10px;
+  width: 900px;
+  margin: auto;
+  padding: 20px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.col {
+  display: flex;
+  flex-direction: column;
+}
