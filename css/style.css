@@ -43,16 +43,17 @@ h1, h2 {
 
 /* OUTPUT */
 
-#box-output {
+.box-output {
   background-color: #fff;
   width: 900px;
   margin: auto;
   padding: 20px;
-  display: none;
+  opacity: 0;
+  transition: opacity 1s;
 }
 
-#box-output.display-visible {
-  display: block;
+.show {
+  opacity: 1;
 }
 
 .output-table {

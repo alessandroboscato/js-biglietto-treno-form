@@ -1,6 +1,7 @@
 // BOTTONE GENERA
 
-var genera = document.getElementById("genera").addEventListener("click",
+var genera = document.getElementById("genera");
+genera.addEventListener("click",
 function() {
 
 // 1 prendi il valore nome dall'input e stampalo come output
@@ -39,16 +40,17 @@ function() {
   document.getElementById("codiceCP").innerHTML = codiceCP;
 
   // 5 rendi visibile il biglietto
-  document.getElementById("box-output").className = document.getElementById("box-output").classList + "display-visible";
+  document.getElementById("box-output").classList.add("show");
 }
 );
 
 // BOTTONE ANNULLA
-var annulla = document.getElementById("annulla").addEventListener("click",
+var annulla = document.getElementById("annulla");
+annulla.addEventListener("click",
 function() {
 
   // 1 rendi invisible il biglietto
-  document.getElementById("box-output").className = document.getElementById("box-output").classList - "display-visible";
+  document.getElementById("box-output").classList.remove("show");
 
   // 2 pulisci la ricerca
   document.getElementById("nome").value = "";
