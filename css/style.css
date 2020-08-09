@@ -3,10 +3,14 @@
   margin: 0;
   padding: 0;
 }
+/* mix */
+body {
+  background-color: #BA1550;
+  font-family: 'Roboto', sans-serif;
+}
 
 .container {
-  background-color: #BA1550;
-  width: 1200px;
+  max-width: 1200px;
   margin: auto;
 }
 
@@ -17,9 +21,11 @@ h1, h2 {
   font-size: 30px;
 }
 
+/* INPUT */
 .box-input {
   background-color: #fff;
   border-radius: 10px;
+  box-shadow: 2px 2px 5px #444;
   width: 900px;
   margin: auto;
   padding: 20px;

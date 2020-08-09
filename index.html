@@ -4,46 +4,48 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <title>Trenitalia</title>
   </head>
   <body>
+    <!-- CONTAINER -->
     <div class="container">
       <h1>calcola il prezzo del tuo biglietto</h1>
       <!-- box input -->
-      <div class="box-input">
+      <section class="box-input">
         <div class="row">
           <div class="col">
-            <label for="">Nome Cognome</label>
-              <input type="text" placeholder="Nome cognome">
+            <label for="nome">Nome Cognome</label>
+              <input id="nome" value="nome" type="text" name="nome" placeholder="Nome cognome">
           </div>
           <div class="col">
-            <label for="">Km da percorrere</label>
-              <input type="number" placeholder="kilometri">
+            <label for="km">Km da percorrere</label>
+              <input id="km" type="number" min="1" placeholder="kilometri">
           </div>
           <div class="col">
-            <label for="">Fascia d'et&agrave;</label>
-              <select>
-                <option value="">Maggiorenne</option>
-                <option value="">Minorenne</option>
-                <option value="">Over 65</option>
+            <label for="fascia-eta">Fascia d'et&agrave;</label>
+              <select id="fascia-eta">
+                <option value="maggiorenne">Maggiorenne</option>
+                <option value="minorenne">Minorenne</option>
+                <option value="over65">Over 65</option>
               </select>
           </div>
         </div>
         <div class="row">
           <div class="action">
-            <button>Genera</button>
-            <button>Annulla</button>
+            <button id="genera">Genera</button>
+            <button id="annulla">Annulla</button>
           </div>
         </div>
-      </div>
+      </section>
       <h2>il tuo biglietto</h2>
-      <div class="box-output">
+      <section class="box-output">
         <h3>dettaglio passeggeri</h3>
         <div class="output-table">
           <div class="passenger">
             <h3>Nome passeggero</h3>
-            <h4>Pippo</h4>
+            <h4 id="nome-passeggero"></h4>
           </div>
           <div class="details">
             <table>
@@ -57,18 +59,17 @@
               </thead>
               <tbody>
                 <tr>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
+                  <td id="offerta"></td>
+                  <td id="carrozza"></td>
+                  <td id="codiceCP"></td>
+                  <td id="totale"></td>
                 </tr>
               </tbody>
             </table>
           </div>
         </div>
-      </div>
+      </section>
     </div>
-
     <script src="js/script.js"></script>
   </body>
 </html>
