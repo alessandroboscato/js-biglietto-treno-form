@@ -38,5 +38,21 @@ function() {
   var codiceCP = Math.floor(Math.random() * 10000 ) + 90000;
   document.getElementById("codiceCP").innerHTML = codiceCP;
 
+  // 5 rendi visibile il biglietto
+  document.getElementById("box-output").className = document.getElementById("box-output").classList + "display-visible";
+}
+);
+
+// BOTTONE ANNULLA
+var annulla = document.getElementById("annulla").addEventListener("click",
+function() {
+
+  // 1 rendi invisible il biglietto
+  document.getElementById("box-output").className = document.getElementById("box-output").classList - "display-visible";
+
+  // 2 pulisci la ricerca
+  document.getElementById("nome").value = "";
+  document.getElementById("km").value = "";
+  document.getElementById("fascia-eta").value = "";
 }
 );

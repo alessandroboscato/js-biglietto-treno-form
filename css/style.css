@@ -22,7 +22,8 @@ h1, h2 {
 }
 
 /* INPUT */
-.box-input {
+
+#box-input {
   background-color: #fff;
   border-radius: 10px;
   box-shadow: 2px 2px 5px #444;
@@ -40,12 +41,18 @@ h1, h2 {
   flex-direction: column;
 }
 
-.box-output {
+/* OUTPUT */
+
+#box-output {
   background-color: #fff;
   width: 900px;
   margin: auto;
   padding: 20px;
+  display: none;
+}
 
+#box-output.display-visible {
+  display: block;
 }
 
 .output-table {
