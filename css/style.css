@@ -5,6 +5,7 @@
 }
 
 /* mix */
+
 body {
   background-color: #BA1550;
   font-family: 'Roboto', sans-serif;
@@ -20,10 +21,22 @@ h1, h2 {
   color: #fff;
   text-align: center;
   font-size: 30px;
+  margin: 30px;
 }
 
-#box-input label {
+#box-input label, #box-input button {
   color: #BA1550;
+}
+
+/* TYPOGRAPHY */
+
+#box-input, input, input::placeholder, #box-input select{
+  font-size: 1em;
+}
+
+#box-input button {
+  font-size: 1.3em;
+  font-weight: bold;
 }
 
 /* INPUT */
@@ -42,6 +55,7 @@ h1, h2 {
   display: flex;
   justify-content: space-around;
 }
+
 .col {
   display: flex;
   flex-direction: column;
@@ -51,6 +65,21 @@ input, select {
   border: 1px solid #BA1550;
   border-radius: 5px;
   text-align: center;
+  margin-top: 15px;
+  margin-bottom: 40px;
+  padding: 5px;
+}
+
+input:focus, select:focus {
+  background-color: #ADFF2D;
+}
+
+button {
+  background-color: lightgrey;
+  border: 1px solid grey;
+  border-radius: 5px;
+  padding: 3px;
+  margin-left: 20px;
 }
 
 /* OUTPUT */
@@ -76,8 +105,21 @@ input, select {
 .passenger {
   width: 200px;
   background-color: grey;
+  padding: 15px;
 }
 
 .details {
   width: calc(100% - 200px);
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+  padding: 15px;
+}
+
+table {
+  width: 100%;
+}
+
+td {
+  text-align: center;
+  padding-top: 30px;
 }
