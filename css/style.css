@@ -3,6 +3,7 @@
   margin: 0;
   padding: 0;
 }
+
 /* mix */
 body {
   background-color: #BA1550;
@@ -21,6 +22,10 @@ h1, h2 {
   font-size: 30px;
 }
 
+#box-input label {
+  color: #BA1550;
+}
+
 /* INPUT */
 
 #box-input {
@@ -31,6 +36,7 @@ h1, h2 {
   margin: auto;
   padding: 20px;
 }
+
 .row {
   width: 100%;
   display: flex;
@@ -39,6 +45,12 @@ h1, h2 {
 .col {
   display: flex;
   flex-direction: column;
+}
+
+input, select {
+  border: 1px solid #BA1550;
+  border-radius: 5px;
+  text-align: center;
 }
 
 /* OUTPUT */
